@@ -19,7 +19,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun ColorDemo() {
+fun Color() {
     var color by remember { mutableStateOf(Color.Red) }
     SideEffect { Log.d("Phases", "ColorDemo: composition") }
     Column {
@@ -33,9 +33,9 @@ fun ColorDemo() {
 }
 
 @Composable
-fun ColorDemoBackground() {
+fun ColorBackground() {
     var color by remember { mutableStateOf(Color.Red) }
-    SideEffect { Log.d("Phases", "ColorDemoBackground: composition") }
+    SideEffect { Log.d("Phases", "ColorBackground: composition") }
     Column {
         Button(onClick = { color = if (color == Color.Red) Color.Blue else Color.Red }) {
             Text("Change color")
