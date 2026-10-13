@@ -27,22 +27,22 @@ import uz.ttpu.framephases.ui.theme.FramePhasesTheme
 private class Demo(val title: String, val content: @Composable () -> Unit)
 
 private val demos = listOf(
-    Demo("Q4 LectureTree") { LectureTree() },
-    Demo("Q5 PaddingDemo") { PaddingDemo() },
-    Demo("Q6 OffsetDemo") { OffsetDemo() },
-    Demo("Q6 OffsetDemoHoisted") { OffsetDemoHoisted() },
-    Demo("Q7 ColorDemo") { ColorDemo() },
-    Demo("Q7 ColorDemoBackground") { ColorDemoBackground() },
-    Demo("Q9 ParallaxSlow") { ParallaxSlow() },
-    Demo("Q9 ParallaxFast") { ParallaxFast() },
-    Demo("Q10 ScrollToTopNaive") { ScrollToTopNaive() },
-    Demo("Q10 ScrollToTopDerived") { ScrollToTopDerived() },
-    Demo("Q11 Parent") { Parent() },
-    Demo("Q11 ParentLambda") { ParentLambda() },
-    Demo("Q13 CyclicDemo") { CyclicDemo() },
-    Demo("Q13 CyclicFixed") { CyclicFixed() },
-    Demo("Q14 StackBelow") { StackBelowDemo() },
-    Demo("Q14 StackBelow 3 children") { StackBelowDemo3() },
+    Demo("4") { LectureTree() },
+    Demo("5") { PaddingDemo() },
+    Demo("6") { OffsetDemo() },
+    Demo("6") { OffsetDemoHoisted() },
+    Demo("7") { Color() },
+    Demo("7") { ColorDemoBackground() },
+    Demo("9") { ParallaxSlow() },
+    Demo("9 ") { ParallaxFast() },
+    Demo("10") { ScrollToTopNaive() },
+    Demo("10") { ScrollToTopDerived() },
+    Demo("11") { Parent() },
+    Demo("11") { ParentLambda() },
+    Demo("13") { Cyclic() },
+    Demo("13") { CyclicFixed() },
+    Demo("14") { StackBelowDemo() },
+    Demo("14") { StackBelowDemo3() },
 )
 
 class MainActivity : ComponentActivity() {
