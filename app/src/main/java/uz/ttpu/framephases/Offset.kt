@@ -17,24 +17,24 @@ import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun OffsetDemo() {
+fun Offset() {
     var offsetX by remember { mutableStateOf(0.dp) }
-    SideEffect { Log.d("Phases", "OffsetDemo: composition") }
+    SideEffect { Log.d("Phases", "Offset: composition") }
     Column {
         Button(onClick = { offsetX = if (offsetX == 0.dp) 80.dp else 0.dp }) {
             Text("Move")
         }
         Text(
-            text = "Offset demo",
+            text = "Offset",
             modifier = Modifier
                 .offset { IntOffset(offsetX.roundToPx(), 0) }
-                .logPhases("offset demo"),
+                .logPhases("offset"),
         )
     }
 }
 
 @Composable
-fun OffsetDemoHoisted() {
+fun OffsetHoisted() {
     var offsetX by remember { mutableStateOf(0.dp) }
     SideEffect { Log.d("Phases", "OffsetDemoHoisted: composition") }
     val offsetPx = with(LocalDensity.current) { offsetX.roundToPx() }
