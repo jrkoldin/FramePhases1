@@ -20,7 +20,7 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun CyclicDemo() {
+fun Cyclic() {
     var imageHeightPx by remember { mutableIntStateOf(0) }
     val heightInThisComposition = imageHeightPx
     val compositions = remember { intArrayOf(0) }
